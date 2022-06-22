@@ -1,4 +1,6 @@
 import React from "react";
+import home1 from "../img/home1.png";
+
 const AboutSection = () => {
   return (
     <div>
@@ -23,7 +25,8 @@ const AboutSection = () => {
         <button>Contact us</button>
       </div>
       <div className="image">
-        <img src="../img/home1.png" alt="akasam aks migiram" />
+        <img src={home1} alt="akasam aks migiram" />
+        // and always should import source first and use it just like this
       </div>
     </div>
   );
