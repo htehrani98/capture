@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { MovieState } from "../movieState"; // 14:7 what is the godDamn problem
 
 const MovieDetail = () => {
   const location = useLocation();
