@@ -11,7 +11,7 @@ const MovieDetail = () => {
   //useEffect
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-  });
+  }, [movies, url]);
 
   return (
     <div>
