@@ -11,8 +11,10 @@ const MovieDetail = () => {
   //useEffect
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
+    // how this === works? because the only place that i saw it was in the if
     setMovie(currentMovie[0]);
   }, [movies, url]);
+  // why in the array and what movies do?
 
   return (
     <>
