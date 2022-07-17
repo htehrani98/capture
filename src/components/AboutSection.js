@@ -4,6 +4,7 @@ import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -32,6 +33,7 @@ const AboutSection = () => {
         <motion.img variants={photoAnim} src={home1} alt="akasam aks migiram" />
         {/* and always should import source first and use it just like this */}
       </Image>
+      <Wave />
     </About>
   );
 };

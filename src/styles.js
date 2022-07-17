@@ -14,6 +14,7 @@ export const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
+  z-index: 2;
 `;
 export const Image = styled.div`
   flex: 1;
@@ -23,6 +24,7 @@ export const Image = styled.div`
     height: 80vh; // at 18: 50 my result is deferent
     object-fit: cover;
   }
+  z-index: 2;
 `;
 export const Hide = styled.div`
   overflow: hidden;
