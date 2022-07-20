@@ -9,7 +9,8 @@ const Toggle = ({ children, title }) => {
       {toggle ? children : ""}
       <div className="faq-line"></div>
     </motion.div>
+    // I gotta fix this issue about motion layout in episode 18
   );
 };
-// could we say something like '{toggle ? children : "children.h4"}'
+// could we say something like '{toggle ? children : "children.h4"}' when title is in FaqSection
 export default Toggle;
