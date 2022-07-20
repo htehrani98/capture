@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -9,9 +10,8 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>How Do I Start?</h4>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -19,12 +19,8 @@ const FaqSection = () => {
               molestiae!
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Daily Schedules</h4>
+        </Toggle>
+        <Toggle title="Daily Schedules">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
 
@@ -33,12 +29,8 @@ const FaqSection = () => {
               molestiae!
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Different Payment Methods</h4>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -46,12 +38,8 @@ const FaqSection = () => {
               molestiae!
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>What Product Do You Offer?</h4>
+        </Toggle>
+        <Toggle title="What Product Do You Offer?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
 
@@ -60,9 +48,8 @@ const FaqSection = () => {
               molestiae!
             </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
