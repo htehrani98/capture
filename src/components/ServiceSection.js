@@ -8,15 +8,14 @@ import home2 from "../img/home2.png";
 //styles
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
-import { fade } from "../animation"; //new
-import { useScroll } from "./useScroll"; //new
+import { fade } from "../animation";
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
-  const [element, controls] = useScroll(); //new
+  const [element, controls] = useScroll();
   // I don't get it at all
   return (
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
-      {/* new */}
       <Description>
         <h2>
           High <span>quality</span> services

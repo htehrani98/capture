@@ -71,4 +71,4 @@ export const scrollReveal = {
       duration: 1,
     },
   },
-}; //new
+};
