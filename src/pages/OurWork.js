@@ -16,6 +16,8 @@ import {
   sliderContainer,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
+// mine didn't fix at 22.Fixing Weird Quirks at 5:0
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -56,6 +58,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="Athlete" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
