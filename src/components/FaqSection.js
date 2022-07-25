@@ -68,7 +68,7 @@ const Faq = styled(About)`
   }
   h2 {
     padding-bottom: 2rem;
-    font-weight: lighter; // nothing is not happening with this code
+    font-weight: lighter;
   }
   .faq-line {
     background: #ccc;
