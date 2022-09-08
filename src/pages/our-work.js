@@ -1,12 +1,9 @@
 import React from "react";
+
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-//Image
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
-//Animations
 import { motion } from "framer-motion";
+
 import {
   pageAnimation,
   fade,
@@ -14,12 +11,12 @@ import {
   lineAnim,
   slider,
   sliderContainer,
-} from "../animation";
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
+} from "../core/constants/animation";
+import { useScroll } from "../core/hooks/use-scroll";
+import { ScrollTop } from "../core/hooks/scroll-top";
 // mine didn't fix at 22.Fixing Weird Quirks at 5:0
 
-const OurWork = () => {
+export const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
@@ -35,7 +32,11 @@ const OurWork = () => {
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="Athlete" />
+            <motion.img
+              variants={photoAnim}
+              src="/img/athlete-small.png"
+              alt="Athlete"
+            />
           </Hide>
         </Link>
       </Movie>
@@ -43,7 +44,7 @@ const OurWork = () => {
         <h2>The Racer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+          <img src="/img/theracer-small.png" alt="theracer" />
         </Link>
       </Movie>
       <Movie
@@ -55,7 +56,7 @@ const OurWork = () => {
         <h2>Good Times</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="Athlete" />
+          <img src="/img/goodtimes-small.png" alt="Athlete" />
         </Link>
       </Movie>
       <ScrollTop />
@@ -113,5 +114,3 @@ const Frame3 = styled(Frame1)`
 const Frame4 = styled(Frame1)`
   background: #8effa0;
 `;
-
-export default OurWork;
