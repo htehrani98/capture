@@ -1,10 +1,11 @@
 import React from "react";
-//Animations
+
 import { motion } from "framer-motion";
-import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
-const ContactUS = () => {
+import { pageAnimation, titleAnim } from "../core/constants/animation";
+
+export const ContactUS = () => {
   return (
     <ContactStyle
       variants={pageAnimation}
@@ -74,5 +75,3 @@ const Social = styled(motion.div)`
     margin: 2rem;
   }
 `;
-
-export default ContactUS;

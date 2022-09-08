@@ -1,10 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+
 import { motion } from "framer-motion";
 
-const Wave = () => {
+import * as Styles from "./styles";
+
+export const Wave = () => {
   return (
-    <WaveSvg
+    <Styles.WaveSvg
       viewBox="0 0 1440 363"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,14 +21,6 @@ const Wave = () => {
         strokeWidth="10"
       />
       {/* and what exactly these codes are may I ask */}
-    </WaveSvg>
+    </Styles.WaveSvg>
   );
 };
-
-const WaveSvg = styled.svg`
-  position: absolute;
-  left: 0;
-  z-index: 1;
-`;
-
-export default Wave;

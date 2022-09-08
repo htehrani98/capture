@@ -1,12 +1,12 @@
 import React from "react";
-import home1 from "../img/home1.png";
-import { About, Description, Image, Hide } from "../styles";
-//Framer Motion
-import { motion } from "framer-motion";
-import { titleAnim, fade, photoAnim } from "../animation";
-import Wave from "./Wave";
 
-const AboutSection = () => {
+import { motion } from "framer-motion";
+
+import { About, Description, Image, Hide } from "../../styles";
+import { titleAnim, fade, photoAnim } from "../../constants/animation";
+import { Wave } from "../wave";
+
+export const AboutSection = () => {
   return (
     <About>
       <Description>
@@ -30,13 +30,14 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact us</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="akasam aks migiram" />
+        <motion.img
+          variants={photoAnim}
+          src="/img/home1.png"
+          alt="akasam aks migiram"
+        />
         {/* and always should import source first and use it just like this */}
       </Image>
       <Wave />
     </About>
   );
 };
-//Styled Components
-
-export default AboutSection;

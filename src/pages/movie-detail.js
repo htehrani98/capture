@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import { MovieState } from "../movieState";
-//Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
 
-const MovieDetail = () => {
+import { MovieState } from "../core/fixtures/movie-state";
+import { pageAnimation } from "../core/constants/animation";
+
+export const MovieDetail = () => {
   const location = useLocation();
   const url = location.pathname;
   const [movies, setMovies] = useState(MovieState);
@@ -113,5 +114,3 @@ const Award = ({ title, description }) => {
     </AwardStyle>
   );
 };
-
-export default MovieDetail; //19:20
